@@ -1,0 +1,160 @@
+/*banner photo at heading*/
+.header-photo{
+  width: 100vw;
+  height: 200px;
+}
+
+.title-container{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 20px;
+  border: none;
+}
+
+.title-picture{
+  width: 600px;
+  height: 200px;
+}
+
+.title{
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+/*containter for each question in quiz*/
+.question-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: none;
+  border-style: solid;
+  border-width: thick;
+  border-color: black;
+  border-radius: 10px;
+  width: 900px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 175px;
+  margin-left: 175px;
+  height: 350px;
+}
+
+.question-header{
+  width: 800px;
+  height: 23px;
+  background-color: lightblue;
+  font-family: 'Krona One', sans-serif;
+  border-radius: 10px;
+  border-style: solid;
+  text-align: center;
+  opacity: .7
+}
+
+/*container for each answer in quiz*/
+.answer-container{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Krona One', sans-serif;
+  text-align: center;
+}
+/*
+.answer-container div:hover{
+  border-color: blue;
+}
+*/
+
+.answer-picture{
+  width: 230px;
+}
+
+/*cause opacity when an option is hovered over*/
+.answer-container:hover{
+  opacity: .5;
+}
+
+.answer-text{
+  font-family: 'Krona One', sans-serif;
+  width: 230px;
+  height: 40px;
+  border-radius: 4px;
+  border-style: solid;
+  border: 0px;
+  background-color: none;
+  border-color: grey;
+  text-align: center;
+}
+
+/*
+input[type=radio]{
+  display: none;
+}
+*/
+
+/*done! button*/
+#submit_button{
+  font-family: 'Krona One', sans-serif;
+  width: 80px;
+  height: 40px;
+  border-radius: 4px;
+  border-style: solid;
+  border: 0px;
+  background-color: red;
+}
+
+/*Result Modal - cited from Lab 2 Simple Modal Instructions - https://www.w3schools.com/howto/howto_css_modals.asp*/
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+/*cited from Lab 2 Simple Modal Instructions - https://www.w3schools.com/howto/howto_css_modals.asp*/
+.modal-content{
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+#modal-text{
+  font-family: 'Krona One', sans-serif;
+  color: white;
+}
+
+#modal-picture{
+  width: 600px;
+  float: center;
+}
+
+/*cited from Lab 2 Simple Modal Instructions - https://www.w3schools.com/howto/howto_css_modals.asp*/
+.close{
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/*cited from Lab 2 Simple Modal Instructions - https://www.w3schools.com/howto/howto_css_modals.asp*/
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
