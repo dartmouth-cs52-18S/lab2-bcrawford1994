@@ -1,0 +1,98 @@
+<!--buzzfeed quiz - "What Ivy League University Should You Attend?" - Lab 2-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css?v=3.3">
+  </head>
+  <body>
+
+    <div class="title-container">
+      <img class="title-picture" src="https://www.americaninno.com/wp-content/uploads/wpallimport/files/1/2014/01/Screen-Shot-2014-01-05-at-11.14.34-PM.png" />
+      <!--img class="title-picture" src="https://images.unsplash.com/photo-1494081307357-78e3fb01df9b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=36a421c4d65f5bc7bc1d195de877fb41&auto=format&fit=crop&w=800&q=60" /-->
+      <h1 class="title"><font color="black"><strong>What Ivy League University Will You Attend?</strong></font></h1>
+      <p><font color="black"><strong>Answer these questions completely unrelated to education, and we'll tell you which prestigious university you'll attend!</strong></font></p>
+    </div>
+
+    <div class="question-container">
+      <h2 class="question-header"><font color="black">Pick a Game of Thrones Character!</font></h2>
+      <label class="answer-container">
+        <img class="answer-picture" src="https://manofmany.com/wp-content/uploads/2017/07/Jon-Snow-2.jpg"/>
+        <input class="answer-text" type="radio" name="got_character" value="jon_snow"><font color="black">Jon Snow</font></label>
+      </label>
+      <label class="answer-container">
+        <img class="answer-picture" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/08/21/11/the-night-king.jpg"/>
+        <input class="answer-text" type="radio" name="got_character" value="night_king"><font color="black">Night King</font></label>
+      </label>
+      <label class="answer-container">
+        <img class="answer-picture" src="https://amp.thisisinsider.com/images/5989fc4eefe3df1f008b48b9-750-563.png"/>
+        <input class="answer-text" type="radio" name="got_character" value="daenarys"><font color="black">Daenarys Targaryen</font></label>
+      </label>
+    </div>
+
+    <div class="question-container">
+      <h2 class="question-header"><font color="black">Pick an Animal!</font></h2>
+      <label class="answer-container">
+        <img class="answer-picture" src="http://petworldturkey.com/wp-content/uploads/2017/02/chihuahua-akmerkez-petworld.jpg"/>
+        <input class="answer-text" type="radio" name="animal" value="chihuahua"><font color="black">Chihuaha</font></label>
+      </label>
+      <label class="answer-container">
+        <img class="answer-picture" src="https://static4.suedkurier.de/storage/image/6/7/2/0/11640276_abo-header_1ptszf_SPw2lv.jpg"/>
+        <input class="answer-text" type="radio" name="animal" value="shark"><font color="black">Shark</font></label>
+      </label>
+      <label class="answer-container">
+        <img class="answer-picture" src="http://media-cdn.wehco.com/img/photos/2017/11/15/156591826_bald-eagle-over-water-11-20-13_crop427131848_t1070_hf7b15c0e8d953994167c469cae3b29634b3e0b9f.jpg"/>
+        <input class="answer-text" type="radio" name="animal" value="eagle"><font color="black">Eagle</font></label>
+      </label>
+    </div>
+
+    <div class="question-container">
+      <h2 class="question-header"><font color="black">Pick a Netflix Show!</font></h2>
+      <label class="answer-container">
+        <img class="answer-picture" src="https://www.thefandomentals.com/wp-content/uploads/2016/12/oitnb-1.jpg"/>
+        <input class="answer-text" type="radio" name="netflix_show" value="OITNB"><font color="black">Orange is the New Black</font></label>
+      </label>
+      <label class="answer-container">
+        <img class="answer-picture" src="http://www.kobieta.pl/media/cache/default_view/uploads/media/default/0002/52/28725ebadc9b0cbdc3fd17a54fbbaee786b5828d.jpeg"/>
+        <input class="answer-text" type="radio" name="netflix_show" value="stranger_things"><font color="black">Stranger Things</font></label>
+      </label>
+      <label class="answer-container">
+        <img class="answer-picture" src="http://ksassets.timeincuk.net/wp/uploads/sites/55/2017/09/narcos_press_1000-920x603.jpg"/>
+        <input class="answer-text" type="radio" name="netflix_show" value="narcos"><font color="black">Narcos</font></label>
+      </label>
+    </div>
+
+    <div class="question-container">
+      <h2 class="question-header"><font color="black">Pick a City!</font></h2>
+      <label class="answer-container">
+        <img class="answer-picture" src="https://dulichmygiareblog.files.wordpress.com/2017/06/las-vegas-strip2.jpg"/>
+        <input class="answer-text" type="radio" name="city" value="las_vegas"><font color="black">Las Vegas</font></label>
+      </label>
+      <label class="answer-container">
+        <img class="answer-picture" src="https://robbreportedit.files.wordpress.com/2017/02/mardi-gras-gallery-image.jpg?w=1024"/>
+        <input class="answer-text" type="radio" name="city" value="new_orleans"><font color="black">New Orleans</font></label>
+      </label>
+      <label class="answer-container">
+        <img class="answer-picture" src="http://redcarpetcharters.com/wp-content/uploads/2016/03/dallas-texas-Copy.jpg"/>
+        <input class="answer-text" type="radio" name="city" value="dallas"><font color="black">Dallas</font></label>
+      </label>
+    </div>
+
+    <div>
+      <!--open result modal -->
+      <button id="submit_button"><font color="white"><strong>Done!</strong></font></button>
+    </div>
+
+    <!-- the modal -->
+    <div id="result_modal" class="modal">
+      <div class="modal_content">
+        <span class="close">&times;</span>
+        <p id="modal-text"></p>
+        <img id="modal-picture" src="https://communications.dartmouth.edu/sites/communications.dartmouth.edu/files/styles/basic_article_slideshow/public/20150806-nightcampussummer-01-eb.jpg?itok=8O6WI-UB"/>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+      <script src="main.js"></script>
+  </body>
